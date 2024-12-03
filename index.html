@@ -115,26 +115,26 @@ setInterval(calculateDays, 1E3);
         return (value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
     var word_arr = [];
-    var txt_min_size = 10;
-    var txt_max_size = 30;
-    for (var i = 0; i < 25; i++) {
+    var txt_min_size = 5;
+    var txt_max_size = 25
+    for (var i = 0; i < 15; i++) {
         word_arr.push({
             x: random(0, width),
             y: random(0, height),
-            text: '小黄💕小毛',
+            text: '小黄',
             size: random(txt_min_size, txt_max_size)
         });
         word_arr.push({
             x: random(0, width),
             y: random(0, height),
-            text: 'hb love',
+            text: '爱小毛',
             size: random(txt_min_size, txt_max_size)
         });
         word_arr.push({
             x: random(0, width),
             y: random(0, height),
-            text: 'mry',
-            size: Math.floor(random(txt_min_size, txt_max_size))
+            text: 'hb❤️mry',
+            size: Math.floor(random(txt_min_size+5, txt_max_size+5))
         });
     }
 
